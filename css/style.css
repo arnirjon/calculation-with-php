@@ -1,0 +1,42 @@
+/*Index file css*/
+body {
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+	background-color: #3D4240;
+	color: #FFFFFF;
+}
+form {
+	padding: 20px;
+}
+.headline {
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 3px 7px 9px darkgoldenrod;
+}
+#cal-card {
+	background-color: #434A48;
+	padding: 20px;
+	box-shadow: 1px -2px 36px 9px darkslategrey;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#re-card {
+	background-color: #434A48;
+	padding: 20px;
+	box-shadow: 1px -2px 36px 9px darkslategrey;
+	margin-top: 20px;
+}
+button {
+	background-color: #434A48;
+	border: 1px solid #263A34;
+	box-shadow: 1px 2px 7px 0px darkgrey;
+	color: #FFFFFF;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-top: 20px;
+}
+.re-txt {
+	font-size: 30px;
+}

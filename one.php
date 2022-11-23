@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    
 
+    
+    <!-- Triangle Area -->
 
     <div class="container my-5" style="color: #000000;">
       <div class="card" style="padding: 20px; padding: 0;">
@@ -36,6 +37,88 @@
 
 
                   echo "ত্রিভুজের ক্ষেত্রফল: " . $trivujFormula ;
+                  
+                }
+              ?>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Squre Area -->
+
+    <div class="container my-5" style="color: #000000;">
+      <div class="card" style="padding: 20px; padding: 0;">
+        <h3 class="dfr">আয়তক্ষেত্রের ক্ষেত্রফল</h3>
+        <div class="bx">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="https://edudesh.com/img/rectangle.webp" class="img-fluid">
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="padding: 20px;">
+                  <form action="" method="POST">
+                    <div class="mb-3">
+                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="squreL" placeholder="দৈর্ঘ্য">
+                    </div>
+                    <div class="mb-3">
+                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="squreW" placeholder="প্রস্থ">
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="squreArea">Calculate</button>
+                  </form>
+              </div>
+              <br>
+              <?php
+                if(isset($_POST['squreArea'])) {
+                  $squreL = $_POST['squreL'];
+                  $squreW = $_POST['squreW'];
+                  $SqureAreaFormula = ($squreL * $squreW) ;
+
+
+                  echo "আয়তক্ষেত্রের ক্ষেত্রফল: " . $SqureAreaFormula ;
+                  
+                }
+              ?>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Circle Area Formula pie*r squre -->
+
+    <div class="container my-5" style="color: #000000;">
+      <div class="card" style="padding: 20px; padding: 0;">
+        <h3 class="dfr">বৃত্তের ক্ষেত্রফল</h3>
+        <div class="bx">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="https://edudesh.com/img/rectangle.webp" class="img-fluid">
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="padding: 20px;">
+                  <form action="" method="POST">
+                    <div class="mb-3">
+                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="squreL" placeholder="দৈর্ঘ্য">
+                    </div>
+                    <div class="mb-3">
+                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="squreW" placeholder="প্রস্থ">
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="squreArea">Calculate</button>
+                  </form>
+              </div>
+              <br>
+              <?php
+                if(isset($_POST['squreArea'])) {
+                  $squreL = $_POST['squreL'];
+                  $squreW = $_POST['squreW'];
+                  $SqureAreaFormula = ($squreL * $squreW) ;
+
+
+                  echo "আয়তক্ষেত্রের ক্ষেত্রফল: " . $SqureAreaFormula ;
                   
                 }
               ?>
